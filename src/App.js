@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
+import {Switch, Route } from 'react-router-dom'
 
 
 // COMPONENTS
@@ -10,18 +10,17 @@ import Opinion from './components/Opinion'
 
 
 
+
 const App = () => {
     return (
-            <div className='app-main'>
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/home' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/project' element={<Projects />} />    
-                    <Route path='/opinion' element={<Opinion />} />
-                </Routes>
-            </div>
-    )
+
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/about" component={About}/>
+                <Route exact path="/project" component={Projects}/>
+                <Route exact path="/comment" component={Opinion}/>
+            </Switch> 
+    )   
 }
 
 export default App

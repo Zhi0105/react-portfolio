@@ -5,6 +5,9 @@ import { BrowserRouter  } from 'react-router-dom'
 // COMPONENT
 import App from './App'
 
+// CSS
+import './index.css'
+
 ReactDOM.render(
 <StrictMode>
     <BrowserRouter>

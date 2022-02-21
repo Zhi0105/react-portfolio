@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.icon-1{
+    transition:0.25s forwards;
+}
+
+.icon-1:hover{
+    transform: scale(1.25);
+}
+
+
+
+
+/* INITIAL NAME START ANIMATE */
+.initial {
+	-webkit-animation: roll-in-left 1s ease-in-out both;
+	animation: roll-in-left 1s ease-in-out both;
+}
+
+
+@-webkit-keyframes roll-in-left {
+        0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        }
+    }
+    @keyframes roll-in-left {
+        0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        }
+    }
+
+    /* INITIAL NAME END ANIMATE */
+
+    @import url('./stylesheet/greet.css');
